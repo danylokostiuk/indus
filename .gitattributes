@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+class Animals:
+    def __init__(self, name, age=12, type="pig"):
+        self.type = type
+        self.name = name
+        self.age = age
+    def printer(self):
+        print(self.name, self.age, self.type)
+
+pinger = Animals(name="pinger", age=2)
+indus = Animals(name="indus", age=150)
+yayko = Animals(name="yayko", age=43, type="unicorn")
