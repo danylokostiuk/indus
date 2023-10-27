@@ -1,15 +1,33 @@
 # Auto detect text files and perform LF normalization
-* text=auto
 
-class Animals:
-    def __init__(self, name, age=12, type="pig"):
-        self.type = type
+
+
+class Pracivnuk:
+    def __init__(self, name, age, country):
+        self.country = country
         self.name = name
         self.age = age
-    def printer(self):
-        print(self.name, self.age, self.type)
 
-pinger = Animals(name="pinger", age=2)
-indus = Animals(name="indus", age=150)
-yayko = Animals(name="yayko", age=43, type="unicorn")
-print("indus is angry")
+    def change_name(self, new_name):
+        self.name = new_name
+
+    def change_age(self, new_age):
+        self.age = new_age
+
+    def change_country(self, new_country):
+        self.country = new_country
+
+    def display_info(self):
+        print(self.name, self.age, self.country)
+
+indus = Pracivnuk(name="indus", age=66, country="Ukraine")
+indus.display_info()
+
+indus.change_name("indusito")
+indus.display_info()
+
+indus.change_country("USA")
+indus.display_info()
+
+indus.change_age(67)
+indus.display_info()
